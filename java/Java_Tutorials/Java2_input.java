@@ -7,6 +7,12 @@ import java.util.Scanner;
 
 public class Java2_input {
     public static void main(String[] args) {
+
+      /*
+       * 
+       */
+
+
     try (Scanner myObj = new Scanner(System.in)) {
         System.out.println("Enter username");
 
@@ -15,11 +21,17 @@ public class Java2_input {
 
         System.out.println("Username is: " + userName);
         /*
+         * println() is a method in PrintStream Class and
+         * out is an object of PrintStream class created in System class.
+         * 
          * we don't need to import System.out.println() method because it 
          * belongs to java.lang package which is by default imported
          */
         
         myObj.close();
     }
+
+
+    
   }
 }
