@@ -7,14 +7,16 @@ class A {
 class B extends A {
     public void display() {
         System.out.println("Showing child class");
-        super.display();
     }
 }
 
 public class Example {
     public static void main(String[] args) {
-        B obj = new B();
+        A obj = new B();
         obj.display();
         // obj.super.display();
+
+        obj = new A();
+        obj.display();
     }
 }

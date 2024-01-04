@@ -4,12 +4,6 @@
 
 
 import java.util.Scanner;
-import java.lang.*;
-
-/*
- * when you write java.lang.* it includes all the files inside it not folder 
- * inside the java.lang
- */
 
 public class Java2_input {
     public static void main(String[] args) {

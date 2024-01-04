@@ -29,7 +29,7 @@ public class Java9_switch {
                 System.out.println("Enter a valid number");
         }
 
-        // update version of switch
+        // update version of switch and work in java12 and above
         String day = "Monday";  
         switch (day) {
             case "Sunday", "Saturday" -> System.out.println("set alarm at 6am");

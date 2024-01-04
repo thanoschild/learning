@@ -1,5 +1,25 @@
+/*  
+    Abstract methods are those types of methods that don't require 
+    implementation for its declaration
+*/
+
+/*
+ * - An instance of an abstract class can not be created.
+ * - Constructors are allowed.
+ * - We can have an abstract class without any abstract method.
+ * - We can define static methods in an abstract class
+ * - There can be a final method in abstract class but any abstract method 
+ *   in class but can not be declared as final 
+ * - If a class contains at least one abstract method then compulsory 
+ *   should declare a class as abstract 
+ */
+
 abstract class Animal {
     abstract void walk();
+
+    public void eat() {
+        System.out.println("All animal eats");
+    }
 }
 
 class Horse extends Animal {

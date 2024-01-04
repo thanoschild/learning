@@ -1,4 +1,4 @@
-import java.lang.*;
+// import java.lang.*;
 /*
  * when you write java.lang.* it includes all the files inside it not folder 
  * inside the java.lang

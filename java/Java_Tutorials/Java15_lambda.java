@@ -7,6 +7,29 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+
+@FunctionalInterface // can declare only one method in function interface
+interface Func {
+    void display();
+    // void print();
+}
+
+
+@FunctionalInterface // can declare only one method in function interface
+interface Func1 {
+    void display(int i, int j);
+    // void print();
+}
+
+
+@FunctionalInterface // can declare only one method in function interface
+interface Func2 {
+    int add(int i, int j);
+    // void print();
+}
+
+
+
 public class Java15_lambda {
     public static void main(String[] args) {
         List<Integer> arr = new ArrayList<Integer>();
@@ -42,5 +65,23 @@ public class Java15_lambda {
             hashMap.put(key, newValue);
         });
         System.out.println(hashMap);
+
+
+
+
+        Func obj2 = new Func() {
+            public void display() {
+                System.out.println("in display Func");
+            }
+        };
+        obj2.display();
+
+        // using lambda expression to create anonymous object only in for functional interface
+        Func1 obj3 = (i, j) -> System.out.println("in new display Func: " + (i + j));
+        obj3.display(3, 6);
+
+        Func2 obj4 = (i, j) -> i + j;
+        int val = obj4.add(5, 6);
+        System.out.println("ans: " + val);
     }
 }
