@@ -2,7 +2,7 @@
    Java program execution.
 */
 
-// There are three types of variables in Java Local variables, static variables, and instance variables.
+// * There are three types of variables in Java Local variables, static variables, and instance variables.
 
 
 /*

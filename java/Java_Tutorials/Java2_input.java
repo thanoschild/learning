@@ -8,11 +8,6 @@ import java.util.Scanner;
 public class Java2_input {
     public static void main(String[] args) {
 
-      /*
-       * 
-       */
-
-
     try (Scanner myObj = new Scanner(System.in)) {
         System.out.println("Enter username");
 

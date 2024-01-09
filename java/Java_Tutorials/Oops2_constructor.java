@@ -79,5 +79,5 @@ public class Oops2_constructor {
  * for example: marks, checkFlag,  display(), addNum()
  * 
  * constant -: all capital
- * for example: MOD, PIE
+ * for example: MOD, PIE, MY_DATA
  */

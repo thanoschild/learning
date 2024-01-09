@@ -21,21 +21,11 @@ class Man {
 
     @Override
     public boolean equals(Object obj) {
-        // Check if the objects are the same reference
-        if (this == obj) {
-            return true;
-        }
-
-        // Check if the other object is null or of a different class
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-
-        // Now, we can safely cast the object to Man
-        Man otherMan = (Man) obj;
-
-        // Compare the relevant attributes (in this case, compare names)
-        return name.equals(otherMan.name);
+        if(obj == this) return true;
+        if(obj == null || this.getClass() != obj.getClass()) return false;
+        Man that = (Man) obj;
+        if(!this.name.equals(that.name)) return false;
+        return true;
     }
 }
 

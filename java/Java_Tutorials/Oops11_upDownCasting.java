@@ -9,7 +9,7 @@ class B extends A {
         System.out.println("in show B");
     }
 }
- 
+
 public class Oops11_upDownCasting {
     public static void main(String[] args) {
         A obj = new B();  // upcasting 

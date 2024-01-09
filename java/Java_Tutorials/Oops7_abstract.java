@@ -39,7 +39,7 @@ public class Oops7_abstract {
         Horse obj = new Horse();
         obj.walk();
 
-        // Animal animal = new Animal();
+        // Animal animal = new Animal(); // this will give error as an instance of abstract class cannot be created
         // animal.walk();
     }
 }

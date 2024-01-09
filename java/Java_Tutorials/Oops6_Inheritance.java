@@ -47,7 +47,7 @@ class EquilateralTriangle extends Triangle {
     }
 
     public void area(int l, int h) {
-        System.out.println("Area of EquilateralTriangle: " + (0.5 * (l * h)));
+        System.out.println("Area of EquilateralTriangle: " + (1.73 * l * l)/4);
     }
 }
 

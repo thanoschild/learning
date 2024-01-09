@@ -29,6 +29,7 @@ public class Java24_bufferedReader {
 
 
         // new way of taking input
+        // in is an object of InputStream class
         Scanner sc = new Scanner(System.in);
         int num1 = sc.nextInt();
         System.out.println(num1);
