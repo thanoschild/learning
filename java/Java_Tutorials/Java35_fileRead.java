@@ -7,6 +7,9 @@ import java.util.Scanner;
 
 public class Java35_fileRead {
     public static void main(String[] args) throws IOException {
+        /*
+         * Scanner class for reading text file
+         */
         File file = new File("/Users/sumeet/Public/learning/java/Java_Tutorials/data.txt");
         Scanner sc = new Scanner(file);
 
@@ -44,6 +47,7 @@ public class Java35_fileRead {
         }
         br.close();
         System.out.println();
+
 
         /*
          * using fileInputStream
