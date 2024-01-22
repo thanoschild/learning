@@ -45,7 +45,7 @@ public class Java31_comparator {
         nums.add(34);
         nums.add(334);
 
-        Collections.sort(nums, myComparator);
+        Collections.sort(nums, (a, b) -> b%10 - a%10);
         System.out.println(nums);
 
         Comparator<Student> myComparator2 = (Student a, Student b) -> {

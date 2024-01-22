@@ -74,6 +74,17 @@ public class Java14_static {
         b = 4*a;
     }
 
+    public static class NestedClass {
+        private String name;
+        NestedClass(String name) {
+            this.name = name;
+        }
+
+        public void display() {
+            System.out.println("Inside " + name);
+        }
+    }
+
     public static void main(String[] args) {
         Mobile obj = new Mobile("15 pro", 150);
         obj.showFeature();
@@ -84,5 +95,8 @@ public class Java14_static {
 
         int serial_No = Mobile.setSerialNo();
         System.out.println("serial no: " + serial_No);
+
+        NestedClass nestedClass = new NestedClass("Nested Class");
+        nestedClass.display();
     }
 }

@@ -13,6 +13,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Java28_ArrayList {
@@ -28,5 +29,10 @@ public class Java28_ArrayList {
         System.out.println(nums);
 
         for(int n : nums) System.out.println(n);
+        Collections.sort(nums);
+
+        // for(int n : nums) System.out.println(n);
+
+        nums.forEach(n -> System.out.println(n));
     }
 }
