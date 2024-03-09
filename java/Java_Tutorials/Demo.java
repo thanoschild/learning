@@ -1,41 +1,18 @@
-class Counter {
-    static int count;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
-    public synchronized void increment() {
-        ++count;
-    }
-}
 
 public class Demo {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
+        List<Integer> arr = new ArrayList<>(List.of(4, 6, 8, 9));
 
-        Counter counter = new Counter();
-        Counter.count = 0;
+        List<Integer> ans = arr.stream()
+                               .filter(n -> n%2 == 0)
+                               .collect(Collectors.toList());
 
-        Runnable obj1 = new Runnable() {
-            public void run() {
-                for(int i = 0; i<1000; i++) {
-                    counter.increment();
-                }
-            }
-        };
-
-        Runnable obj2 = () -> {
-                for(int i = 0; i<1000; i++) {
-                    counter.increment();
-                }
-            };
-        
-
-        Thread t1 = new Thread(obj1);
-        Thread t2 = new Thread(obj2);
-
-        t1.start();
-        t2.start();
-
-        t1.join();
-        t2.join();
-
-        System.out.println("value: " + Counter.count);
+        for(int n : ans) {
+            System.out.println(n);
+        }
     }
 }
